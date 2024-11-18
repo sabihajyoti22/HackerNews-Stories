@@ -1,17 +1,18 @@
 <template>
   <div class="default-layout">
-    <RouterView v-slot="{ Component }">
-      <template v-if="Component">
-        <Transition mode="out-in">
-          <Suspense>
-            <component :is="Component" />
-
-            <template #fallback>
-              <Loader />
-            </template>
-          </Suspense>
-        </Transition>
-      </template>
+    <RouterView name="default" v-slot="{ Component, route }">
+      <transition mode="out-in" :duration="300" :key="route.path">
+        <Suspense >
+          <template #default>
+            <component :is="Component" :key="route.path"/>
+          </template>
+          <template #fallback>
+            <div>
+              <Loader :height="80" :width="80" />
+            </div>
+          </template>
+        </Suspense>
+      </transition>
     </RouterView>
   </div>
 </template>
