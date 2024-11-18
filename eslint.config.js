@@ -8,6 +8,11 @@ export default [
   { languageOptions: { globals: globals.browser } },
   ...pluginVue.configs["flat/recommended"],
   {
+    "parserOptions": {
+      "ecmaVersion": 2018
+    }
+  },
+  {
     rules: {
       'vue/no-unused-vars': 'error',
       'vetur.validation.style': 'off',
