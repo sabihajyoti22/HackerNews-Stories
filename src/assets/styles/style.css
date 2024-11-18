@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .default-layout {
+    @apply max-w-[1200px] mx-3 md:mx-auto py-5;
+  }
+}
+
+.comment a {
+  color: blue;
+}
+
+.comment a:hover {
+  text-decoration: underline;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100vh;
+  border: 3px solid #41b883;
+}
