@@ -16,7 +16,7 @@
         <div v-for="(commentId, commentIndex) in details.comments" :key="commentId">
           <Comments :commentId="commentId" />
 
-          <hr v-if="commentIndex + 1 !== details.comments.length" class="border-b border-gray-400 my-3">
+          <hr v-if="commentIndex + 1 !== details.comments?.length" class="border-b border-gray-400 my-3">
         </div>
       </div>
     </div>

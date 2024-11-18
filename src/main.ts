@@ -4,7 +4,7 @@ import App from './App.vue'
 import router from './routes'
 import axios from 'axios'
 import pinia from './store'
-import plugin from "./plugins/formatTime"
+import plugin from './plugins/formatTime'
 
 const app = createApp(App)
 

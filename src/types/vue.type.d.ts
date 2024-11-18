@@ -1,6 +1,7 @@
 export { }
 declare module 'vue' {
     interface ComponentCustomProperties {
-        $axios: any
+        $axios: any,
+        $formatTime: Function
     }
 }
