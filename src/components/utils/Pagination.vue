@@ -96,11 +96,7 @@
       },
       pages() {
         const range = [];
-        for (
-          let i = this.startPage;
-          i <= Math.min(this.startPage + this.maxVisibleButtons - 1, this.totalPages);
-          i++
-        ) {
+        for (let i = this.startPage;i <= Math.min(this.startPage + this.maxVisibleButtons - 1, this.totalPages);i++) {
           range.push({
             name: i,
             isDisabled: i === this.currentPage

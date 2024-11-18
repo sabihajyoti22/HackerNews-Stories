@@ -10,11 +10,11 @@
         </div>
 
         <div>
-          <div class="">
+          <div class="text-right">
             Time: {{ $formatTime(details.time) }}
           </div>
           <div class="">
-            Comments No: {{ details.commentsNo }}
+            Number of comments: {{ details.commentsNo }}
           </div>
         </div>
       </div>
