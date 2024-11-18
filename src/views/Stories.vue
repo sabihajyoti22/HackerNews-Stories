@@ -62,5 +62,5 @@
     }
   }
 
-  getAllStories()
+  await getAllStories()
 </script>
